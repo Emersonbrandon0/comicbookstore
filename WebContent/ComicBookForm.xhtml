@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/templates/home.xhtml">
+	<ui:param name="pageTitle" value="Enter in A Comic Book" />
+	<ui:define name="mainPanel">
+		<body class="addSpace">
+			<b:container>
+				<b:row>
+					<b:column medium-screen="8">
+					<b:well>
+						<h:form>
+							<b:inputText placeholder="Title..." value="#{comicBook.title}" ></b:inputText>
+							<b:inputText placeholder="Superhero..." value="#{comicBook.superhero}" ></b:inputText>
+							<b:inputText placeholder="Publisher..." value="#{comicBook.publisher}" ></b:inputText>
+							<b:inputText placeholder="Year..." value="#{comicBook.year}" ></b:inputText>
+							
+							<h:commandButton value="Submit" action="#{comicBook.submitComicBook()}" styleClass="defaultButton"/>
+						</h:form>
+					</b:well>
+					</b:column>
+				</b:row>
+			</b:container>
+		</body>
+	</ui:define>
+</ui:composition>
+</html>

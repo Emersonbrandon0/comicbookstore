@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="WebContent/META-INF"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_111">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="oracle.eclipse.tools.glassfish.lib.system">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSF 2.2 (Mojarra 2.2.0)">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+			<attribute name="owner.project.facets" value="jst.jsf"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/emersonbrandon0/Downloads/BootsFaces-OSP-1.0.2-dist-default.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/emersonbrandon0/Downloads/BootsFaces-OSP-1.0.2-dist.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/emersonbrandon0/Downloads/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/emersonbrandon0/Downloads/eclipselink-2.6.4.v20160829-44060b6/eclipselink/jlib/jpa/javax.persistence_2.1.1.v201509150925.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/emersonbrandon0/Downloads/eclipselink-2.6.4.v20160829-44060b6/eclipselink/jlib/eclipselink.jar"/>
+	<classpathentry kind="lib" path="C:/Users/emersonbrandon0/Downloads/eclipselink-2.6.4.v20160829-44060b6/eclipselink/jlib/jpa/org.eclipse.persistence.jpa.modelgen_2.6.4.v20160829-44060b6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/emersonbrandon0/Downloads/eclipselink-2.6.4.v20160829-44060b6/eclipselink/jlib/jpa/org.eclipse.persistence.jpars_2.6.4.v20160829-44060b6.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

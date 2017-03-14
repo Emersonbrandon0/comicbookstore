@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="/templates/home.xhtml">
+	<ui:param name="pageTitle" value="Dashboard" />
+	<ui:define name="mainPanel">
+		<body class="addSpace">
+			<b:container>			
+				<ui:fragment rendered="#{user.signedIn}">
+					<b:row>
+			<b:jumbotron styleClass="jumbo">
+	            <b:container>
+	                <h1>Welcome to the Comic Book Database</h1>
+	                <p>Enter in your comic books into the system so that we can showcase your comics. It's easier 
+	                than ever to keep track of your ever-growing collection using our interface.
+	                Simply enter in info about the comic and upload a picture and we'll help you monitor and
+	                organize your collection.
+	                </p>		                	                	
+					<p><h:outputLink value="ComicBookForm.xhtml"><br/>Click here to add some new comic books to the database.</h:outputLink></p>
+	            </b:container>
+			</b:jumbotron>
+		</b:row>
+				
+					<b:row>
+						<b:column medium-screen="4">
+							<b:well>
+								<h3>Welcome to your dashboard</h3>
+								<p>You can update your profile here to provide more detail about the man behind the mask-you!
+								You can add your favorite genres, favorite characters, and story arcs that you would like to read
+								to your profile.</p>
+								<b><h:outputLink value="Collection.xhtml">See Your Collection!</h:outputLink></b>
+							</b:well>
+						</b:column>
+						<b:column medium-screen="8">
+							<b:well>
+								<h3>Recently Added</h3>
+								Here you can see all the recent comic books that you have added
+								to your collection. From here you can add or remove more comics, 
+								update your personal details, or update your comic book wishlist.
+							</b:well>
+						</b:column>
+					</b:row>
+					<b:panel>
+						<h:form>
+						    <b:tabView pills="true" tabPosition="left" contentStyle="border: 1px solid #ddd;padding:10px">
+						    	<b:tab title="Profile">
+						    		<h:form id="loginForm">
+								    <b:inputText label="Name" render-label="true"/>
+								    <b:inputText label="Name" render-label="true"/>
+								    <b:inputText label="Name" render-label="true"/>
+								    <b:inputText label="Name" render-label="true"/>
+								    <b:inputText label="Name" render-label="true"/>
+								  <b:commandButton update="@form" value="Login" onclick="ajax:loginBean.login2()"/>
+								</h:form>
+						    	</b:tab>
+							    <b:tab title="Favorite Characters">
+							         Put some text here.
+							    </b:tab>
+							    <b:tab title="Genres of Choice">
+							         Put some text here.
+							    </b:tab>
+							    <b:tab title="Greatest Stories Ever Told">
+							         Put some text here.
+							    </b:tab>
+						    </b:tabView>
+						</h:form>
+					</b:panel>
+				</ui:fragment>
+			</b:container>
+		</body>		
+	</ui:define>
+</ui:composition>
+</html>

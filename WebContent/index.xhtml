@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<ui:composition template="/templates/home.xhtml">
+	<ui:param name="pageTitle" value="Home Page"/>
+	<ui:define name="mainPanel">
+		<b:row>
+			<b:jumbotron styleClass="jumbo">
+	            <b:container>
+	                <h1>Comic Book Collector</h1>
+	                <p>Log in to the system at the top so you can begin keeping track of your collection.</p>		                	                
+	                	<b:container>
+							<b:row>
+							<b:column medium-screen="1">
+							</b:column>
+							<b:column medium-screen="10" hidden="...sm">								
+								<b:carousel id="parque" styleClass="slideshow" showIndicators="false">
+									<b:carouselItem styleClass="slideshow">
+								    	<img src="http://www.guilfordfreelibrary.org/wp-content/uploads/2015/10/comicbooks.jpg" alt="Valladolid" />
+								    </b:carouselItem>
+								    <b:carouselItem styleClass="slideshow">
+								    	<img src="http://www.theindianleader.com/wp-content/uploads/2013/12/4816337143_d3b3785d72_o.jpg" alt="Valladolid"/>
+								    </b:carouselItem>
+								    <b:carouselItem styleClass="slideshow">
+								    	<img src="https://i.ytimg.com/vi/fZF3xDld69s/maxresdefault.jpg" alt="Valladolid" />
+								    </b:carouselItem>
+								</b:carousel>
+							</b:column>
+							</b:row>
+						</b:container>
+	            </b:container>
+			</b:jumbotron>
+		</b:row>
+		
+		<b:container>
+			<b:row>
+				<b:column medium-screen="5">
+					<h:graphicImage value="http://cdn.playbuzz.com/cdn/639f09a7-e6e7-4755-bdf0-d22e9d2a7528/ddc3a688-03b5-4dd6-9a08-78af32de84b6.jpg" alt="aede" styleClass="img-responsive otherImage" />
+				</b:column>
+				<b:column medium-screen="7">
+					<b:well>
+	    				<h3>Well Header</h3>
+	    				Sed egestas tincidunt nunc, eget sollicitudin orci sagittis 
+	    				nec. Phasellus tincidunt semper urna vel ultricies. Morbi sed nisl
+	    				 ultrices, ullamcorper ante vitae, pharetra metus. Nunc fringilla 
+	    				 feugiat orci, a sodales lectus dignissim eu. Sed ullamcorper vel lacus sit 
+	    				 amet tincidunt. Nunc sodales dictum mi, ut iaculis lacus lobortis ut. Nunc 
+	    				 cursus, elit a gravida tincidunt, dui orci condimentum arcu, eget co
+	    				 ngue purus risus vel arcu. Pellentesque vel nibh a felis placerat portt
+	    				 itor. Proin id egestas nisi. Quisque id nunc dui. Nulla vitae vestibulum est. F
+	    				 usce sit amet velit eget arcu aliquet sodales volutpat a turpis. Aenean quis 
+	    				 eros eget tortor laoreet rutrum a ac mi. Nam risus justo, dictum at ne
+	    				 que at, accumsan pharetra nisl. 
+	    				Etiam vitae pulvinar felis, sit amet tempus odio. Proin sit amet dia
+	    				m augue. 
+					</b:well>
+				</b:column>
+			</b:row>
+			
+            <b:row>
+                <b:column medium-screen="4">
+                    <h1 id="recent">Recently Added:</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+					 felis et lacus feugiat varius eget in arcu. Suspendisse sodales 
+					 quis nisi ac convallis. In vitae vulputate metus. Phasellus 
+					 interdum quis ipsum rhoncus ultrices. Quisque neque lectus, blandit 
+					 sed augue quis, blandit semper tortor. Phasellus pretium sem sit amet quam 
+					 suscipit, quis dictum mi ultrices. Ut dignissim elementum neque, ac 
+					 fringilla ipsum convallis sed. Proin eget tristique leo, a sagittis ligula. 
+					 Vestibulum bibendum sem sit amet arcu consectetur, ac eleifend dui imperdiet. 
+					 Vestibulum semper turpis ante, ac condimentum nunc malesuada sodales. Aliquam
+					  rutrum lectus a mi faucibus efficitur. Mauris ultrices risus at augue imperdiet,
+					   id ultrices nunc ullamcorper. </p>
+                </b:column>
+                <b:column medium-screen="4">
+                    <h1 id="recent">Recently Added:</h1>
+					<p>Pellentesque condimentum imperdiet lacus, at commodo erat. 
+					Ut lacinia vel risus id consectetur. Morbi sapien felis, malesuada
+					 at ornare vitae, posuere nec augue. Nam sed lacus nisi. Aliquam euismod, 
+					 odio maximus pharetra consequat, urna lorem elementum arcu, eget feugiat
+					  nunc neque semper dolor. In enim nisl, tincidunt non ex ut, maximus 
+					  dapibus purus. Proin pharetra pharetra mauris, a pretium felis imperdiet nec.
+					   Praesent ultricies pharetra sapien non efficitur. Integer eleifend, 
+					   dui eu volutpat dapibus, orci dui elementum ligula, eget vulputate nibh 
+					   lacus luctus neque. Morbi consectetur nibh quis libero efficitur, id 
+					   luctus mauris venenatis. </p>
+                </b:column>
+                <b:column medium-screen="4">
+                    <h1 id="recent">Recently Added:</h1>
+					<p>Nunc congue, lectus nec pretium facilisis, nibh lorem consectetur justo,
+					 vitae vehicula diam orci ac nisl. Nulla nec elit est. Suspendisse
+					  egestas, risus quis convallis semper, augue nulla molestie ex, 
+					  eu porta turpis ante vel purus. Nullam quam massa, sagittis at mi 
+					  nec, interdum feugiat sem. Donec leo lorem, viverra vitae laoreet eget, 
+					  ultrices sit amet ipsum. Nunc arcu metus, rhoncus a leo ut, aliquet 
+					  hendrerit orci. Suspendisse potenti. Pellentesque sagittis quam ligula, 
+					  nec tristique mauris vehicula nec. Nulla posuere risus iaculis 
+					  velit porta, sed tincidunt sem ultrices. </p>
+                </b:column>
+            </b:row>
+        </b:container>
+	</ui:define>
+</ui:composition>
+
+</html>

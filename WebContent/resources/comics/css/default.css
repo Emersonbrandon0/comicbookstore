@@ -1,0 +1,61 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	padding-top: 50px; 
+	padding-bottom: 20px;
+	height: 100%; 
+	width: 100%;
+	background-image: url("#{resource['comics/images/subtle_white_feathers.png']}");
+}
+
+html, body { 
+	height: 100%; 
+	width: 100%; 
+	margin: 0; 
+}
+
+.addSpace{
+	padding-top:90px;
+	padding-bottom: 20px;
+	height: 100%; 
+	width: 100%;
+}
+
+.label{
+	color:red;
+}
+.inputBox{
+	
+}
+.comicInputForm{
+	background-color:#e7f885;
+	
+}
+.footer{
+	margin-left:300px;
+}
+
+.slideshow{
+	height:350px; 
+}
+
+.otherImage{
+	width:auto;
+	margin:0 auto;
+}
+
+.jumbo {
+  padding:10px !important;
+  background-color:#fff9f9!important;
+}
+
+.defaultButton {
+    background-color: #ffa6a6;
+    color: #FFF;
+    border-radius: 4px;
+    padding: 5px 6px;
+    cursor: pointer;
+    border: 0;
+    top: -1px;
+    margin-left: 5px;
+}
